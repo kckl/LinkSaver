@@ -9,7 +9,7 @@ const linksFromLocalStorage = JSON.parse( localStorage.getItem("myLinks") )
 
 if (linksFromLocalStorage) {
     myLinks = linksFromLocalStorage
-    renderLinks()
+    renderLinks(myLinks)
 }
 
 inputBtn.addEventListener("click", function() {
